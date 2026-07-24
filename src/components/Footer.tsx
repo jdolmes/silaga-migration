@@ -11,16 +11,16 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex flex-col mb-4">
-              <span className="font-[family-name:var(--font-playfair)] text-2xl font-bold text-white">
-                Silaga
+              <span className="font-[family-name:var(--font-space-grotesk)] text-2xl font-bold text-white">
+                SILAGA
               </span>
               <span className="font-[family-name:var(--font-inter)] text-xs text-gray-300 tracking-wide -mt-1">
-                Migration Advisory
+                Migration
               </span>
             </div>
             <p className="text-gray-300 text-sm max-w-md">
-              Professional migration advice for individuals, families and employers
-              across all Australian visa pathways.
+              MARA-registered migration advisory for skilled workers and employers
+              across Australian work visa pathways.
             </p>
             <div className="mt-4">
               <Image
@@ -50,6 +50,11 @@ export default function Footer() {
               <li>
                 <Link href="/services" className="text-gray-300 hover:text-[var(--color-gold)] text-sm transition-colors">
                   Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-gray-300 hover:text-[var(--color-gold)] text-sm transition-colors">
+                  Blog
                 </Link>
               </li>
               <li>
@@ -91,17 +96,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} Silaga Migration Advisory. All rights reserved.
-          </p>
-          <p className="text-gray-400 text-sm mt-2 md:mt-0">
-            <a
-              href="https://silagaco.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[var(--color-gold)] transition-colors"
-            >
-              silagaco.com
-            </a>
+            &copy; {currentYear} SILAGA Migration. All rights reserved.
           </p>
         </div>
       </div>

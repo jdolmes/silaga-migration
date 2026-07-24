@@ -4,8 +4,8 @@ import Image from "next/image";
 import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata: Metadata = {
-  title: "About | Silaga Migration Advisory",
-  description: "Learn about Silaga Migration Advisory and our commitment to providing professional, personalised migration advice for your Australian visa journey.",
+  title: "About | SILAGA Migration",
+  description: "Learn about SILAGA Migration and our commitment to providing MARA-registered migration advice for skilled workers and employers.",
 };
 
 export default function AboutPage() {
@@ -14,8 +14,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-[var(--color-navy)] text-white py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-6">
-            About Silaga Migration Advisory
+          <h1 className="font-[family-name:var(--font-space-grotesk)] text-4xl md:text-5xl font-bold mb-6">
+            About SILAGA
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Your trusted partner for professional migration advice and visa services
@@ -43,7 +43,7 @@ export default function AboutPage() {
 
             {/* Bio Content */}
             <div>
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-4">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-4">
                 Francis Takuto Ichihara
               </h2>
               <p className="text-[var(--color-gold)] font-semibold mb-6">
@@ -69,22 +69,18 @@ export default function AboutPage() {
       <section className="py-10 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-6">
+            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-6">
               Why I Focus on Australian Migration
             </h2>
             <div className="text-[var(--color-charcoal)] space-y-4">
               <p>
-                Australia offers incredible opportunities for skilled workers, families,
-                and businesses from around the world. However, navigating the visa system
-                can be complex and overwhelming without expert guidance.
+                Australia offers incredible opportunities for skilled workers and the businesses that need them. However, navigating the visa system can be complex and overwhelming without expert guidance.
               </p>
               <p>
-                Too often, I&apos;ve seen capable people miss opportunities — not because they weren&apos;t qualified, but because they didn&apos;t have someone in their corner who truly understood the system. That&apos;s what drives my work: making sure talent isn&apos;t wasted due to bureaucratic confusion.
+                Too often, I&apos;ve seen capable people miss opportunities — not because they weren&apos;t qualified, but because they didn&apos;t have someone in their corner who truly understood the system. That&apos;s what drives my work: making sure talent isn&apos;t wasted due to bureaucratic confusion, and businesses aren&apos;t held back by compliance complexity.
               </p>
               <p>
-                At Silaga Migration Advisory, I combine thorough knowledge of migration
-                law with a client-focused approach to ensure every application is given
-                the attention and expertise it deserves.
+                At SILAGA, I combine thorough knowledge of migration law with a client-focused approach to ensure every application — and every sponsorship — is given the attention and expertise it deserves.
               </p>
             </div>
           </div>
@@ -102,7 +98,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <div>
-                <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl font-bold text-[var(--color-navy)]">
+                <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl md:text-3xl font-bold text-[var(--color-navy)]">
                   MARA Registered
                 </h2>
                 <p className="text-[var(--color-charcoal)]">
@@ -149,7 +145,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-10 md:py-16 bg-[var(--color-navy)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-white mb-6">
             Let&apos;s Discuss Your Migration Journey
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
+import DraftBanner from "@/components/DraftBanner";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
 });
@@ -17,8 +18,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Silaga Migration Advisory | Australian Visa & Migration Experts",
-  description: "Silaga Migration Advisory provides personalised, professional migration advice for individuals, families and employers across all Australian visa pathways.",
+  title: "SILAGA Migration | Australian Work Visa & Employer Sponsorship Experts",
+  description: "SILAGA Migration provides MARA-registered migration advice for skilled workers and employers across Australian work visa pathways.",
 };
 
 export default function RootLayout({
@@ -28,7 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${inter.variable} antialiased`}>
+      <body className={`${spaceGrotesk.variable} ${inter.variable} antialiased`}>
+        <DraftBanner />
         <Nav />
         <main>{children}</main>
         <Footer />

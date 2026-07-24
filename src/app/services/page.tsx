@@ -3,8 +3,8 @@ import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata: Metadata = {
-  title: "Services | Silaga Migration Advisory",
-  description: "Explore our comprehensive Australian visa and migration services including skilled migration, employer sponsored visas, family visas, student visas, and more.",
+  title: "Services | SILAGA Migration",
+  description: "Explore our comprehensive Australian work visa services, from skilled migration to employer sponsorship.",
 };
 
 const services = [
@@ -31,43 +31,21 @@ const services = [
     ),
   },
   {
-    title: "Family Visas",
-    subtitle: "Partner, Parent & Child Visas",
+    title: "Sponsorship & Compliance",
+    subtitle: "Ongoing Sponsorship Obligations",
     description:
-      "Reunite with your loved ones in Australia. We assist with partner visas, parent visas, child visas, and other family stream applications with care and attention to detail.",
+      "Labour market testing, sponsorship obligations, and Department of Home Affairs correspondence — we keep your business compliant at every stage of the sponsorship lifecycle.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Student Visas",
-    subtitle: "Subclass 500",
-    description:
-      "Planning to study in Australia? We help international students navigate the student visa process, including Genuine Student requirements and course enrolment guidance.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-      </svg>
-    ),
-  },
-  {
-    title: "Visitor Visas",
-    subtitle: "Tourism & Business Visits",
-    description:
-      "Whether for tourism, visiting family, or business purposes, we assist with visitor visa applications to ensure a smooth entry into Australia.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
       </svg>
     ),
   },
   {
     title: "Appeals & Reviews",
-    subtitle: "AAT & Ministerial Intervention",
+    subtitle: "ART & Ministerial Intervention",
     description:
-      "If your visa application has been refused, we can assess your options for Administrative Appeals Tribunal (AAT) review or ministerial intervention requests.",
+      "If your skilled or employer-sponsored visa application has been refused, we assess your options for Administrative Review Tribunal (ART) review or ministerial intervention requests.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -82,12 +60,12 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="bg-[var(--color-navy)] text-white py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="font-[family-name:var(--font-space-grotesk)] text-4xl md:text-5xl font-bold mb-6">
             Our Services
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Comprehensive migration services tailored to your needs, from skilled
-            migration to employer sponsorship and family reunification
+            migration to employer sponsorship
           </p>
         </div>
       </section>
@@ -95,7 +73,7 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-10 md:py-16 bg-[var(--color-offwhite)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -104,7 +82,7 @@ export default function ServicesPage() {
                 <div className="w-14 h-14 bg-[var(--color-offwhite)] rounded-full flex items-center justify-center mb-6 text-[var(--color-gold)]">
                   {service.icon}
                 </div>
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold text-[var(--color-navy)] mb-1">
+                <h3 className="font-[family-name:var(--font-space-grotesk)] text-xl font-bold text-[var(--color-navy)] mb-1">
                   {service.title}
                 </h3>
                 <p className="text-[var(--color-gold)] text-sm font-medium mb-4">
@@ -122,7 +100,7 @@ export default function ServicesPage() {
       {/* Process Section */}
       <section className="py-10 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] text-center mb-12">
+          <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] text-center mb-12">
             How We Work
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -189,14 +167,14 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {/* Free Resource Badge */}
           <div className="inline-flex items-center gap-2 bg-[var(--color-gold)] rounded-full px-4 py-1.5 mb-6">
-            <svg className="w-4 h-4 text-[var(--color-navy)]" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm2.5 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm6.207.293a1 1 0 00-1.414 0l-6 6a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414zM12.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" clipRule="evenodd" />
             </svg>
-            <span className="text-[var(--color-navy)] text-sm font-semibold">Free Resource</span>
+            <span className="text-white text-sm font-semibold">Free Resource</span>
           </div>
 
           {/* Title */}
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Occupation Eligibility Search Tool
           </h2>
 
@@ -207,7 +185,7 @@ export default function ServicesPage() {
 
           {/* CTA Button */}
           <a
-            href="https://migration-tool-eight.vercel.app/"
+            href="https://skillindex.au"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-gold inline-flex items-center gap-2 text-lg"
@@ -228,7 +206,7 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-10 md:py-16 bg-[var(--color-offwhite)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-6">
+          <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-6">
             Ready to Explore Your Options?
           </h2>
           <p className="text-[var(--color-charcoal)] text-lg max-w-2xl mx-auto mb-8">

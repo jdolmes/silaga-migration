@@ -57,7 +57,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-[var(--color-navy)] text-white py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="font-[family-name:var(--font-space-grotesk)] text-4xl md:text-5xl font-bold mb-6">
             Get in Touch
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ export default function ContactPage() {
 
             {/* Left Column - Book a Consultation */}
             <div className="bg-[var(--color-navy)] rounded-xl p-8 md:p-12 flex flex-col justify-center text-center lg:text-left">
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-white mb-4">
                 Book a Consultation
               </h2>
               <p className="text-gray-300 text-lg mb-8 max-w-md mx-auto lg:mx-0">
@@ -109,7 +109,7 @@ export default function ContactPage() {
 
             {/* Right Column - Contact Form */}
             <div className="bg-white rounded-xl p-8 md:p-12 shadow-sm border border-gray-100">
-              <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl font-bold text-[var(--color-navy)] mb-6">
+              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl md:text-3xl font-bold text-[var(--color-navy)] mb-6">
                 Send Us a Message
               </h2>
 
@@ -207,9 +207,8 @@ export default function ContactPage() {
                       <option value="">Select a visa type</option>
                       <option value="skilled-migration">Skilled Migration</option>
                       <option value="employer-sponsored">Employer Sponsored</option>
-                      <option value="family-visa">Family Visa</option>
-                      <option value="student-visa">Student Visa</option>
-                      <option value="visitor-visa">Visitor Visa</option>
+                      <option value="sponsorship-compliance">Sponsorship & Compliance</option>
+                      <option value="appeals-reviews">Appeals & Reviews</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
