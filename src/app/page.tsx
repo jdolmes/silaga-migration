@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
 export default function Home() {
   return (
@@ -233,7 +234,7 @@ export default function Home() {
 
             {/* Right Column - Mock Search Interface */}
             <div className="lg:pl-8">
-              <div className="bg-[var(--color-navy)] rounded-xl shadow-2xl p-6 max-w-md mx-auto lg:mx-0 lg:ml-auto">
+              <div className="relative overflow-hidden bg-[var(--color-navy)] rounded-xl shadow-2xl p-6 max-w-md mx-auto lg:mx-0 lg:ml-auto">
                 {/* Mock Search Bar */}
                 <div className="bg-white rounded-lg flex items-center px-4 py-3 mb-4">
                   <svg className="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,6 +299,9 @@ export default function Home() {
                     <span className="text-[#9ca3af] text-xs">Live data</span>
                   </div>
                 </div>
+
+                {/* Progressive blur: signals more results below the visible 3 */}
+                <ProgressiveBlur position="bottom" />
               </div>
             </div>
           </div>

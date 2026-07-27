@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import { useState } from "react";
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -119,6 +120,11 @@ export default function Nav() {
           )}
         </div>
       </nav>
+
+      {/* Progressive blur: fades scrolling content as it passes beneath the sticky nav */}
+      <div className="fixed top-20 inset-x-0 z-40 h-8 pointer-events-none">
+        <ProgressiveBlur position="top" height="100%" />
+      </div>
     </>
   );
 }
