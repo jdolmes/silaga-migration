@@ -1,6 +1,6 @@
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+import SkillindexPromo from "@/components/SkillindexPromo";
 
 export default function Home() {
   return (
@@ -167,146 +167,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Occupation Tool Feature Section */}
-      <section className="py-10 md:py-16 bg-[var(--color-offwhite)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Column - Content */}
-            <div>
-              {/* Free Resource Badge */}
-              <div className="inline-flex items-center gap-2 bg-[var(--color-gold)] rounded-full px-4 py-1.5 mb-6">
-                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm2.5 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm6.207.293a1 1 0 00-1.414 0l-6 6a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414zM12.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" clipRule="evenodd" />
-                </svg>
-                <span className="text-white text-sm font-semibold">Free Resource</span>
-              </div>
-
-              {/* Headline */}
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl font-bold text-[var(--color-navy)] mb-6">
-                Not Sure If Your Occupation Qualifies?
-              </h2>
-
-              {/* Description */}
-              <p className="text-[var(--color-charcoal)] text-lg mb-6 leading-relaxed">
-                We built Australia&apos;s most comprehensive occupation search tool. Check visa eligibility across 3,261 occupations, covering employer sponsored, skilled migration, regional and more — instantly, for free.
-              </p>
-
-              {/* Feature Chips */}
-              <div className="flex flex-wrap gap-3 mb-8">
-                <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200">
-                  <svg className="w-4 h-4 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[var(--color-charcoal)] text-sm font-medium">3,261 Occupations</span>
-                </div>
-                <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200">
-                  <svg className="w-4 h-4 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[var(--color-charcoal)] text-sm font-medium">Multiple Visa Pathways</span>
-                </div>
-                <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200">
-                  <svg className="w-4 h-4 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-[var(--color-charcoal)] text-sm font-medium">Free & Instant</span>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <a
-                href="https://skillindex.au"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-gold inline-flex items-center gap-2 text-lg"
-              >
-                Search Occupations Now
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-
-              {/* Note */}
-              <p className="text-gray-500 text-sm mt-4">
-                Free to use. No sign up required.
-              </p>
-            </div>
-
-            {/* Right Column - Mock Search Interface */}
-            <div className="lg:pl-8">
-              <div className="relative overflow-hidden bg-[var(--color-navy)] rounded-xl shadow-2xl p-6 max-w-md mx-auto lg:mx-0 lg:ml-auto">
-                {/* Mock Search Bar */}
-                <div className="bg-white rounded-lg flex items-center px-4 py-3 mb-4">
-                  <svg className="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                  <span className="text-gray-400 text-sm">Search your occupation...</span>
-                </div>
-
-                {/* Mock Results */}
-                <div className="space-y-3">
-                  {/* Result 1 */}
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <span className="bg-[var(--color-gold)] text-white text-xs font-bold px-2 py-1 rounded">
-                          261313
-                        </span>
-                        <span className="text-[var(--color-charcoal)] text-sm font-medium">Software Engineer</span>
-                      </div>
-                      <span className="bg-[#16a34a] text-white text-xs font-medium px-2 py-1 rounded">
-                        Eligible
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Result 2 */}
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <span className="bg-[var(--color-gold)] text-white text-xs font-bold px-2 py-1 rounded">
-                          252311
-                        </span>
-                        <span className="text-[var(--color-charcoal)] text-sm font-medium">Registered Nurse</span>
-                      </div>
-                      <span className="bg-[#16a34a] text-white text-xs font-medium px-2 py-1 rounded">
-                        Eligible
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Result 3 */}
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <span className="bg-[var(--color-gold)] text-white text-xs font-bold px-2 py-1 rounded">
-                          233211
-                        </span>
-                        <span className="text-[var(--color-charcoal)] text-sm font-medium">Civil Engineer</span>
-                      </div>
-                      <span className="bg-[#16a34a] text-white text-xs font-medium px-2 py-1 rounded">
-                        Eligible
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Bar */}
-                <div className="mt-4 pt-4 border-t border-white border-opacity-10 flex items-center justify-between">
-                  <span className="text-[#9ca3af] text-xs">3,261 occupations indexed</span>
-                  <div className="flex items-center gap-1">
-                    <div className="w-2 h-2 bg-[#16a34a] rounded-full"></div>
-                    <span className="text-[#9ca3af] text-xs">Live data</span>
-                  </div>
-                </div>
-
-                {/* Progressive blur: signals more results below the visible 3 */}
-                <ProgressiveBlur position="bottom" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Free Tool Promo */}
+      <SkillindexPromo />
 
       {/* How It Works */}
       <section className="py-10 md:py-16 bg-white">

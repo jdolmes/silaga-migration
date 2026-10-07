@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
+import SkillindexPromo from "@/components/SkillindexPromo";
 
 export const metadata: Metadata = {
   title: "Services | SILAGA Migration",
@@ -156,52 +157,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Occupation Tool Feature Banner */}
-      <section className="py-10 md:py-16 bg-[var(--color-navy)] relative overflow-hidden">
-        {/* Subtle background accent */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[var(--color-gold)] rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--color-gold)] rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          {/* Free Resource Badge */}
-          <div className="inline-flex items-center gap-2 bg-[var(--color-gold)] rounded-full px-4 py-1.5 mb-6">
-            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm2.5 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm6.207.293a1 1 0 00-1.414 0l-6 6a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414zM12.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" clipRule="evenodd" />
-            </svg>
-            <span className="text-white text-sm font-semibold">Free Resource</span>
-          </div>
-
-          {/* Title */}
-          <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Occupation Eligibility Search Tool
-          </h2>
-
-          {/* Description */}
-          <p className="text-white text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed opacity-90">
-            Not sure if your occupation qualifies for an Australian visa? Before booking a consultation, explore our free tool to check visa eligibility across thousands of Australian occupations — including employer sponsored, skilled migration and more.
-          </p>
-
-          {/* CTA Button */}
-          <a
-            href="https://skillindex.au"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold inline-flex items-center gap-2 text-lg"
-          >
-            Search Occupations Now
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-
-          {/* Subtle Note */}
-          <p className="text-gray-400 text-sm mt-4">
-            Free to use. No sign up required.
-          </p>
-        </div>
-      </section>
+      {/* Free Tool Promo */}
+      <SkillindexPromo />
 
       {/* CTA Section */}
       <section className="py-10 md:py-16 bg-[var(--color-offwhite)]">
