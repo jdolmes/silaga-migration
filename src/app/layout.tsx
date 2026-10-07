@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
-import DraftBanner from "@/components/DraftBanner";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -30,7 +29,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable} antialiased`}>
-        <DraftBanner />
         <Nav />
         <main>{children}</main>
         <Footer />
